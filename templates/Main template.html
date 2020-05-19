@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        a:link {color: blue}
+        a:visited {color: rebeccapurple}
+        a:hover {color:green}
+        a:active {color:red}
+        h1,h2,h3 {font-family: "Arial Black"}
+        p {font-family: Verdana}
+        ol {font-family: Verdana}
+        table {font-family: Verdana}
+        .center {
+        display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        body {
+            background-image:url("../static/background4.jpg");
+            background-size: cover
+            background-size: 50px
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>{% block Title %}
+        Dofoustous
+    {% endblock %}</title>
+</head>
+<body>
+    <div style="margin-left: 70px;margin-right: 70px">
+
+    <h1 style="text-align: center;font-size: 50px;color: cornflowerblue">Welcome to Dofoustous</h1>
+    <h3>To acces all the tutorials of this website</h3>
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Main menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Tutorial1">Tutorial 1: How to start Dofus 1.29</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Tutorial2">Tutorial 2: ...</a>
+            </li>
+        </ul>
+         </div>
+     </nav>
+    <!-- Empty block for text for other pages -->
+    {% block Body %}{% endblock %}
+    {% block MainTemplate %}
+        <br><br>
+        <h2 style="width: 350px;background-color: black; color: white" class="mark">About the website</h2>
+        <br>
+        <p>
+            Hello and welcome to my website, Dofoustous! Here, you can learn a lot about the best game in the world, Dofus. Many tutorials will be available soon to help all players, including
+        starters or novice, to progress in their adventure and to achieve big things. Please notice that the website is a work in progress and some parts of the website will be released soon. Good
+        game and have fun!
+        </p>
+        <br>
+        <h2 style="width: 200px;background-color: black; color: white" class="mark">About me</h2>
+        <p>
+            For those who are interested me, I am a young programmer studying at Concordia University. I am still a freshman but I plan to start big projects in the future. To begin with, I
+        thought that programming a website about my favorite video game would be a good starting point. As you can notice it, I am a big fan of Dofus. As you can see in the following picture,
+        I played this game for more than 9000 hours!
+        </p>
+        <br>
+        <img src="../static/hoursofgameplayed.jpg" alt="hoursofgameplayed">
+        <br>
+        <br>
+        <p>
+        I started playing this game in late 2008. Back in the days, PCs were not that powerful and games like Dofus were very popular for their accessibility.
+        After 11 years of experience, I can now feel comfortable enough to be able to guide players in this game. In this game, I played all the different game modes: heroique, Dofus Touch (mobile),
+        Dofus 1.29, Dofus Officiel but even after playing all these modes, I still prefer the 1.29 version. It is the version of my childhood and I really appreciate it even if the graphic designs
+        are not that great.
+        </p>
+        <br><br>
+        <p>
+        Thus said, I hope you will have good experience visiting my website. GL and HF!
+        </p>
+        <img class="center" src="https://wimg.jakpost.travel/wimages/sm/153-1534714_free-download-amazing-dofus-dofus-1-29-art.jpg" alt="Error">
+        <br><br>
+    {% endblock %}
+
+
+
+    </div>
+</body>
+</html>
